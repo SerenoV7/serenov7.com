@@ -27,7 +27,7 @@ jobs:
           deno-version: v2.x
 
       - name: Install Dependencies
-        run: deno cache --node=npm --lock=deno.lock
+        run: deno cache --lock=deno.lock
 
       - name: Build
         run: deno run -A npm:vite build
